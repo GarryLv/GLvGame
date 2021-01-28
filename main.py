@@ -267,12 +267,10 @@ def StartScreen(canvas):
         fontC = pygame.font.Font("OldSchool.ttf", 20)
         labelO = fontC.render("One Player" + "*" * check, 1, WHITE)
         labelT = fontC.render("Two Players" + "*" * (not check), 1, WHITE)
-        labelW = fontC.render('PONG (WS 1Player|Arrows 2Player)', 1, WHITE)
-        labelL = fontC.render('(L-Leader_Table)', 1, WHITE)
+        labelW = fontC.render('PONG', 1, WHITE)
         canvas.blit(labelO, (WIDTH / 2 - 100, HEIGHT / 2 - 30))
         canvas.blit(labelT, (WIDTH / 2 - 100, HEIGHT / 2 + 30))
         canvas.blit(labelW, (WIDTH/16, HEIGHT/4-30))
-        canvas.blit(labelL, (WIDTH/16, HEIGHT/4))
         shader(canvas)
 
         for event in pygame.event.get():
