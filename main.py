@@ -208,6 +208,7 @@ def newName(canvas, con, cur):
         canvas.blit(ai_label, (WIDTH / 2 - 65, 30))
         canvas.blit(lable_name, (WIDTH / 2 - 55, 60))
         pygame.draw.rect(canvas, WHITE, ((WIDTH / 2 - 55 + 22*id, 90), (20, 10)), 0)
+        shader(canvas)
         for event in pygame.event.get():
             if event.type == QUIT:
                 run = False
